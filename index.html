@@ -3,29 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Spring 2027 Scholarship HQ</title>
+<title>Spring 2027 Scholarship HQ — Red Edition</title>
 <style>
-:root{--bg:#fff9fd;--card:#fff;--ink:#2d1635;--muted:#806b84;--line:#eadbea;--purple:#7c3aed;--pink:#ec4899;--lav:#a78bfa;--green:#16a34a;--gold:#d97706;--red:#dc2626}
-*{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#fff9fd,#f7f3ff);color:var(--ink);padding-bottom:88px}
+:root{--bg:#090909;--card:#141414;--ink:#f8f8f8;--muted:#aaa;--line:#303030;--purple:#b30000;--pink:#ef1b1b;--lav:#ff4d4d;--green:#22c55e;--gold:#f59e0b;--red:#ef4444}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#080808,#120707);color:var(--ink);padding-bottom:88px}
 button,input,select,textarea{font:inherit} button{cursor:pointer} a{color:var(--purple)}
 .wrap{max-width:1100px;margin:auto;padding:16px} .top{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .brand{font-size:26px;font-weight:1000} .brand span{color:var(--pink)} .saved{font-size:12px;color:var(--green);font-weight:900}
-.hero,.card{background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 12px 28px rgba(72,35,88,.07)}
+.hero,.card{background:rgba(20,20,20,.97);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 12px 28px rgba(0,0,0,.28)}
 .hero{margin:12px 0} .hero h1{font-size:clamp(34px,7vw,58px);line-height:.95;margin:4px 0} .soft{color:var(--muted)} .label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:900}
 .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px} .card{grid-column:span 4} .wide{grid-column:span 8} .full{grid-column:1/-1}
 .kpi{font-size:36px;font-weight:1000;margin-top:8px} .money{font-variant-numeric:tabular-nums}
-input,select,textarea{width:100%;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:13px;padding:12px;margin:5px 0;min-height:44px} textarea{min-height:100px;resize:vertical}
-.btn{border:0;border-radius:13px;padding:12px 14px;font-weight:900;background:linear-gradient(135deg,var(--pink),var(--lav));color:#fff;min-height:44px} .btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line)} .btn.danger{background:#fff;color:var(--red);border:1px solid #fecaca}
-.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center} .pill{display:inline-block;border-radius:999px;padding:5px 9px;background:#f7effc;border:1px solid #ead5f3;font-size:11px;font-weight:900}
+input,select,textarea{width:100%;border:1px solid var(--line);background:#101010;color:var(--ink);border-radius:13px;padding:12px;margin:5px 0;min-height:44px} textarea{min-height:100px;resize:vertical}
+.btn{border:0;border-radius:13px;padding:12px 14px;font-weight:900;background:linear-gradient(135deg,#b30000,#ef1b1b);color:#fff;min-height:44px} .btn.alt{background:#101010;color:var(--ink);border:1px solid var(--line)} .btn.danger{background:#fff;color:var(--red);border:1px solid #fecaca}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center} .pill{display:inline-block;border-radius:999px;padding:5px 9px;background:#211010;border:1px solid #4b2020;font-size:11px;font-weight:900}
 .status-Won{background:#dcfce7;border-color:#bbf7d0;color:#166534} .status-Submitted{background:#dbeafe;border-color:#bfdbfe;color:#1d4ed8} .status-Preparing{background:#fef3c7;border-color:#fde68a;color:#92400e} .status-Research{background:#f3f4f6;border-color:#e5e7eb;color:#4b5563} .status-Eligible{background:#ede9fe;border-color:#ddd6fe;color:#6d28d9} .status-Finalist{background:#ffe4e6;border-color:#fecdd3;color:#be123c} .status-Not-Eligible{background:#f3f4f6;color:#6b7280}
 .priority-High{color:#b91c1c} .priority-Medium{color:#a16207} .priority-Low{color:#0369a1}
-.progress{height:14px;background:#f0e7f3;border-radius:999px;overflow:hidden} .progress>div{height:100%;background:linear-gradient(90deg,var(--purple),var(--pink));width:0}
+.progress{height:14px;background:#2b2b2b;border-radius:999px;overflow:hidden} .progress>div{height:100%;background:linear-gradient(90deg,#7f0000,#ef1b1b);width:0}
 .scholarship{border-top:1px solid var(--line);padding:15px 0} .scholarship:first-child{border-top:0} .scholarship h3{margin:0 0 6px;font-size:18px} .meta{font-size:12px;color:var(--muted);line-height:1.45} .actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
 .deadline-soon{background:#fff7ed;border-color:#fed7aa} .deadline-over{background:#fff1f2;border-color:#fecdd3}
-.nav{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,250,253,.97);backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;justify-content:center;gap:3px;padding:8px 4px calc(8px + env(safe-area-inset-bottom));overflow:auto}
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(10,10,10,.97);backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;justify-content:center;gap:3px;padding:8px 4px calc(8px + env(safe-area-inset-bottom));overflow:auto}
 .nav button{border:0;background:transparent;color:#806b84;font-size:11px;font-weight:900;padding:10px 9px;white-space:nowrap} .nav button.active{color:#fff;background:linear-gradient(135deg,var(--purple),var(--pink));border-radius:14px}
 .hidden{display:none!important} .toolbar{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;margin-bottom:12px} .check{display:flex;gap:10px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line)} .check:first-child{border-top:0} .check input{width:auto;min-height:auto;margin-top:3px}
 .goalrow{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end} .tiny{font-size:11px;color:var(--muted)} .empty{padding:24px;text-align:center;color:var(--muted)}
+input::placeholder,textarea::placeholder{color:#777} select{color-scheme:dark} details summary{color:#fff} a{color:#ff5a5a}
 @media(max-width:760px){.card,.wide{grid-column:1/-1}.toolbar{grid-template-columns:1fr}.goalrow{grid-template-columns:1fr}}
 </style>
 </head>
@@ -48,7 +49,7 @@ input,select,textarea{width:100%;border:1px solid var(--line);background:#fff;co
 
 <section id="scholarships" class="page hidden">
 <div class="hero"><div class="label">War room</div><h1>Scholarships.</h1><p class="soft">Search, filter, edit, delete, and move applications through the pipeline.</p></div>
-<div class="card full">
+<div class="card full"><div class="tiny" style="margin-bottom:12px"><b>Status guide:</b> Research → Eligible → Preparing → <b>Submitted</b> → Finalist → <b>Won</b>. Your dashboard counts Submitted, Finalist, and Won as applications sent.</div>
 <div class="toolbar"><input id="search" placeholder="Search scholarships…"><select id="statusFilter"><option value="">All statuses</option></select><select id="priorityFilter"><option value="">All priorities</option><option>High</option><option>Medium</option><option>Low</option></select></div>
 <div id="scholarshipList"></div>
 </div>
@@ -59,11 +60,29 @@ input,select,textarea{width:100%;border:1px solid var(--line);background:#fff;co
 <div class="card full">
 <input id="editId" type="hidden">
 <div class="grid">
-<div class="card" style="box-shadow:none"><div class="label">Scholarship</div><input id="fName" placeholder="Scholarship name"><input id="fOrg" placeholder="Organization"><input id="fAward" type="number" min="0" step="1" placeholder="Potential award"></div>
-<div class="card" style="box-shadow:none"><div class="label">Tracking</div><select id="fPriority"><option>High</option><option>Medium</option><option>Low</option></select><select id="fStatus"></select><input id="fDeadline" type="date"><select id="fApplied"><option>No</option><option>Yes</option></select></div>
-<div class="card" style="box-shadow:none"><div class="label">Money / follow-up</div><input id="fWon" type="number" min="0" step="1" placeholder="Amount won"><input id="fNextDate" type="date"><input id="fNext" placeholder="Next action"><input id="fDecision" placeholder="Decision / follow-up"></div>
+<div class="card" style="box-shadow:none"><div class="label">Scholarship</div>
+<label><b>Scholarship Name</b><input id="fName" placeholder="Scholarship name"></label>
+<label><b>Organization</b><input id="fOrg" placeholder="Organization"></label>
+<label><b>Potential Award</b><input id="fAward" type="number" min="0" step="1" placeholder="Potential award"></label>
+</div>
+<div class="card" style="box-shadow:none"><div class="label">Tracking</div>
+<label><b>Priority</b><select id="fPriority"><option>High</option><option>Medium</option><option>Low</option></select></label>
+<label><b>Status</b><select id="fStatus"></select></label>
+<label><b>Application Deadline</b><input id="fDeadline" type="date"></label>
+<div class="tiny">Choose <b>Submitted</b> after you apply. Choose <b>Won</b> if you receive the scholarship.</div>
+<input id="fApplied" type="hidden" value="No">
+</div>
+<div class="card" style="box-shadow:none"><div class="label">Money / follow-up</div>
+<label><b>Amount Won</b><input id="fWon" type="number" min="0" step="1" placeholder="Enter award amount"></label>
+<label><b>Next Action Date</b><input id="fNextDate" type="date"></label>
+<label><b>Next Action</b><input id="fNext" placeholder="Example: finish essay"></label>
+<label><b>Decision / Follow-Up</b><input id="fDecision" placeholder="Result, follow-up notes, etc."></label>
+</div>
 <div class="card wide" style="box-shadow:none"><div class="label">Application notes</div><textarea id="fEligibility" placeholder="Eligibility / fit"></textarea><textarea id="fNeeds" placeholder="What we need"></textarea></div>
-<div class="card" style="box-shadow:none"><div class="label">Links / contact</div><input id="fContact" placeholder="Contact / notes"><input id="fWebsite" placeholder="Website URL"></div>
+<div class="card" style="box-shadow:none"><div class="label">Links / contact</div>
+<label><b>Contact / Notes</b><input id="fContact" placeholder="Contact / notes"></label>
+<label><b>Website</b><input id="fWebsite" placeholder="Website URL"></label>
+</div>
 </div>
 <div class="row" style="margin-top:12px"><button class="btn" id="saveScholarship">Save scholarship</button><button class="btn alt hidden" id="cancelEdit">Cancel edit</button></div>
 </div>
@@ -161,7 +180,7 @@ saveFunding.onclick=()=>{data.funding={pell:Number(pell.value)||0,subsidized:Num
 saveScholarship.onclick=()=>{
  if(!fName.value.trim()){alert('Add the scholarship name first.');return}
  const id=editId.value||('s'+Date.now());
- const obj={id,name:fName.value.trim(),org:fOrg.value.trim(),award:Number(fAward.value)||0,priority:fPriority.value,status:fStatus.value,deadline:fDeadline.value,eligibility:fEligibility.value.trim(),needs:fNeeds.value.trim(),contact:fContact.value.trim(),website:fWebsite.value.trim(),applied:fApplied.value,decision:fDecision.value.trim(),won:Number(fWon.value)||0,nextActionDate:fNextDate.value,nextAction:fNext.value.trim()};
+ const obj={id,name:fName.value.trim(),org:fOrg.value.trim(),award:Number(fAward.value)||0,priority:fPriority.value,status:fStatus.value,deadline:fDeadline.value,eligibility:fEligibility.value.trim(),needs:fNeeds.value.trim(),contact:fContact.value.trim(),website:fWebsite.value.trim(),applied:['Submitted','Finalist','Won'].includes(fStatus.value)?'Yes':'No',decision:fDecision.value.trim(),won:Number(fWon.value)||0,nextActionDate:fNextDate.value,nextAction:fNext.value.trim()};
  const ix=data.scholarships.findIndex(x=>x.id===id);if(ix>=0)data.scholarships[ix]=obj;else data.scholarships.push(obj);persist();clearForm();navTo('scholarships');
 };
 function clearForm(){editId.value='';fName.value=fOrg.value=fAward.value=fDeadline.value=fWon.value=fNextDate.value=fNext.value=fDecision.value=fEligibility.value=fNeeds.value=fContact.value=fWebsite.value='';fPriority.value='High';fStatus.value='Research';fApplied.value='No';formMode.textContent='Add opportunity';formTitle.textContent='New scholarship.';saveScholarship.textContent='Save scholarship';cancelEdit.classList.add('hidden')}
