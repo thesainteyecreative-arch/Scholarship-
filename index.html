@@ -5,29 +5,22 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Scholarship HQ — Healthcare Era</title>
 <style>
-:root{--bg:#090909;--card:#141414;--ink:#f8f8f8;--muted:#aaa;--line:#303030;--purple:#b30000;--pink:#ef1b1b;--lav:#ff4d4d;--green:#22c55e;--gold:#f59e0b;--red:#ef4444}
-*{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#080808,#120707);color:var(--ink);padding-bottom:88px}
-button,input,select,textarea{font:inherit} button{cursor:pointer} a{color:var(--purple)}
-.wrap{max-width:1100px;margin:auto;padding:16px} .top{display:flex;justify-content:space-between;align-items:center;gap:12px}
-.brand{font-size:26px;font-weight:1000} .brand span{color:var(--pink)} .saved{font-size:12px;color:var(--green);font-weight:900}
-.hero,.card{background:rgba(20,20,20,.97);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 12px 28px rgba(0,0,0,.28)}
-.hero{margin:12px 0} .hero h1{font-size:clamp(34px,7vw,58px);line-height:.95;margin:4px 0} .soft{color:var(--muted)} .label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:900}
-.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px} .card{grid-column:span 4} .wide{grid-column:span 8} .full{grid-column:1/-1}
-.kpi{font-size:36px;font-weight:1000;margin-top:8px} .money{font-variant-numeric:tabular-nums}
-input,select,textarea{width:100%;border:1px solid var(--line);background:#101010;color:var(--ink);border-radius:13px;padding:12px;margin:5px 0;min-height:44px} textarea{min-height:100px;resize:vertical}
-.btn{border:0;border-radius:13px;padding:12px 14px;font-weight:900;background:linear-gradient(135deg,#b30000,#ef1b1b);color:#fff;min-height:44px} .btn.alt{background:#101010;color:var(--ink);border:1px solid var(--line)} .btn.danger{background:#fff;color:var(--red);border:1px solid #fecaca}
-.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center} .pill{display:inline-block;border-radius:999px;padding:5px 9px;background:#211010;border:1px solid #4b2020;font-size:11px;font-weight:900}
-.status-Won{background:#dcfce7;border-color:#bbf7d0;color:#166534} .status-Submitted{background:#dbeafe;border-color:#bfdbfe;color:#1d4ed8} .status-Preparing{background:#fef3c7;border-color:#fde68a;color:#92400e} .status-Research{background:#f3f4f6;border-color:#e5e7eb;color:#4b5563} .status-Eligible{background:#ede9fe;border-color:#ddd6fe;color:#6d28d9} .status-Finalist{background:#ffe4e6;border-color:#fecdd3;color:#be123c} .status-Not-Eligible{background:#f3f4f6;color:#6b7280}
-.priority-High{color:#b91c1c} .priority-Medium{color:#a16207} .priority-Low{color:#0369a1}
-.progress{height:14px;background:#2b2b2b;border-radius:999px;overflow:hidden} .progress>div{height:100%;background:linear-gradient(90deg,#7f0000,#ef1b1b);width:0}
-.scholarship{border-top:1px solid var(--line);padding:15px 0} .scholarship:first-child{border-top:0} .scholarship h3{margin:0 0 6px;font-size:18px} .meta{font-size:12px;color:var(--muted);line-height:1.45} .actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
-.deadline-soon{background:#fff7ed;border-color:#fed7aa} .deadline-over{background:#fff1f2;border-color:#fecdd3}
-.nav{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(10,10,10,.97);backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;justify-content:center;gap:3px;padding:8px 4px calc(8px + env(safe-area-inset-bottom));overflow:auto}
-.nav button{border:0;background:transparent;color:#806b84;font-size:11px;font-weight:900;padding:10px 9px;white-space:nowrap} .nav button.active{color:#fff;background:linear-gradient(135deg,var(--purple),var(--pink));border-radius:14px}
-.hidden{display:none!important} .toolbar{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;margin-bottom:12px} .check{display:flex;gap:10px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line)} .check:first-child{border-top:0} .check input{width:auto;min-height:auto;margin-top:3px}
-.goalrow{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end} .tiny{font-size:11px;color:var(--muted)} .empty{padding:24px;text-align:center;color:var(--muted)}
-input::placeholder,textarea::placeholder{color:#777} select{color-scheme:dark} details summary{color:#fff} a{color:#ff5a5a}
-@media(max-width:760px){.card,.wide{grid-column:1/-1}.toolbar{grid-template-columns:1fr}.goalrow{grid-template-columns:1fr}}
+:root{--bg:#090909;--card:#151413;--ink:#f6efe6;--muted:#aaa39d;--line:#37322f;--red:#a51f2b;--red2:#74151c;--sage:#78917d;--gold:#c59b58}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#080808,#120909);color:var(--ink);padding-bottom:94px}
+button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{max-width:1100px;margin:auto;padding:16px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-size:26px;font-weight:1000}.brand span{color:#d23340}.saved{font-size:12px;color:var(--sage);font-weight:900}
+.hero,.card{background:rgba(21,20,19,.97);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 12px 28px rgba(0,0,0,.28)}
+.hero{margin:12px 0}.hero h1{font-size:clamp(34px,7vw,58px);line-height:.95;margin:5px 0}.soft,.meta,.tiny{color:var(--muted)}.label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:900}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}.card{grid-column:span 4}.wide{grid-column:span 8}.full{grid-column:1/-1}.kpi{font-size:34px;font-weight:1000;margin-top:8px}
+input,select,textarea{width:100%;border:1px solid var(--line);background:#0f0f0f;color:var(--ink);border-radius:13px;padding:12px;margin:5px 0;min-height:44px}textarea{min-height:92px;resize:vertical}
+.btn{border:0;border-radius:13px;padding:12px 14px;font-weight:900;background:linear-gradient(135deg,var(--red2),var(--red));color:white;min-height:44px}.btn.alt{background:#111;color:var(--ink);border:1px solid var(--line)}.btn.danger{background:#1b1111;color:#ff8c8c;border:1px solid #5c2525}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.pill{display:inline-block;border-radius:999px;padding:5px 9px;background:#211515;border:1px solid #53302e;font-size:11px;font-weight:900}
+.scholarship{border-top:1px solid var(--line);padding:15px 0}.scholarship:first-child{border-top:0}.scholarship h3{margin:0 0 6px;font-size:18px}.meta{font-size:12px;line-height:1.5}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(9,9,9,.97);backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;justify-content:center;gap:2px;padding:8px 4px calc(8px + env(safe-area-inset-bottom));overflow:auto}
+.nav button{border:0;background:transparent;color:#8f8580;font-size:10px;font-weight:900;padding:10px 8px;white-space:nowrap}.nav button.active{color:#fff;background:linear-gradient(135deg,var(--red2),var(--red));border-radius:14px}
+.hidden{display:none!important}.toolbar{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;margin-bottom:12px}.check{display:flex;gap:9px;align-items:center;padding:7px 0}.check input{width:auto;min-height:auto}.empty{padding:24px;text-align:center;color:var(--muted)}
+a{color:#dc6d75}details{margin-top:10px}summary{cursor:pointer}.sectiontag{margin-bottom:8px;color:var(--sage);font-weight:900;font-size:12px}
+@media(max-width:760px){.card,.wide{grid-column:1/-1}.toolbar{grid-template-columns:1fr}.nav{justify-content:flex-start}}
 </style>
 </head>
 <body>
@@ -35,165 +28,122 @@ input::placeholder,textarea::placeholder{color:#777} select{color-scheme:dark} d
 <header class="top"><div class="brand">Scholarship <span>HQ</span> 🩺</div><div class="saved" id="saved">Saved ✓</div></header>
 
 <section id="dashboard" class="page">
-<div class="hero"><div class="label">Spring 2027</div><h1>Fund the healthcare era.</h1><p class="soft">GSU, Georgia aid, healthcare/STEM scholarships, and future PA-school funding — all in one place.</p></div>
+<div class="hero"><div class="label">Healthcare Era · Spring 2027</div><h1>Fund the pivot.</h1><p class="soft">GSU, Georgia aid, healthcare/STEM money, and the road to PA school — without mixing every era together.</p></div>
 <div class="grid">
-<div class="card"><div class="label">💰 Tracked / Applied</div><div class="kpi" id="kpiTracked">0</div></div>
-<div class="card"><div class="label">⏳ Submitted / Pending</div><div class="kpi" id="kpiSubmitted">0</div></div>
-<div class="card"><div class="label">🏆 Won</div><div class="kpi" id="kpiWon">0</div></div>
-<div class="card"><div class="label">💵 Amount Won</div><div class="kpi money" id="kpiMoney">$0</div></div>
-<div class="card wide"><div class="label">🎯 Spring 2027 Goal</div><div class="row" style="justify-content:space-between;margin:8px 0"><b id="goalText">$0 / $5,000</b><span class="pill" id="goalPct">0%</span></div><div class="progress"><div id="goalBar"></div></div><div class="tiny" style="margin-top:8px">Stretch goal: <b id="stretchText">$10,000</b></div></div>
-<div class="card"><div class="label">🔥 High Priority</div><div class="kpi" id="kpiHigh">0</div><div class="soft">opportunities</div></div>
-<div class="card full"><div class="label">Upcoming deadlines & next actions</div><div id="upcoming"></div></div>
+<div class="card"><div class="label">💰 Applied</div><div class="kpi" id="appliedMoney">$0</div></div>
+<div class="card"><div class="label">⏳ Pending</div><div class="kpi" id="pendingMoney">$0</div></div>
+<div class="card"><div class="label">🏆 Won</div><div class="kpi" id="wonMoney">$0</div></div>
+<div class="card"><div class="label">🎯 Spring 2027 Goal</div><div class="kpi" id="goalMoney">$5,000</div></div>
+<div class="card"><div class="label">📚 GSU / State Aid</div><div class="kpi" id="aidMoney">$0</div></div>
+<div class="card"><div class="label">🔥 Active Hunt</div><div class="kpi" id="activeCount">0</div></div>
+<div class="card full"><div class="label">Priority board</div><div id="priorityBoard"></div></div>
 </div>
 </section>
 
-<section id="scholarships" class="page hidden">
-<div class="hero"><div class="label">🔥 Apply Now · 🔒 GSU Required · 🩺 Future Years</div><h1>Scholarships & Aid.</h1><p class="soft">Search, filter, edit, delete, and move applications through the pipeline.</p></div>
-<div class="card full"><div class="tiny" style="margin-bottom:12px"><b>Status guide:</b> Research → Eligible → Preparing → <b>Submitted</b> → Finalist → <b>Won</b>. Your dashboard counts Submitted, Finalist, and Won as applications sent.</div>
-<div class="toolbar"><input id="search" placeholder="Search scholarships…"><select id="statusFilter"><option value="">All statuses</option></select><select id="priorityFilter"><option value="">All priorities</option><option>High</option><option>Medium</option><option>Low</option></select></div>
-<div id="scholarshipList"></div>
-</div>
+<section id="active" class="page hidden">
+<div class="hero"><div class="label">Right now</div><h1>Active funding.</h1><p class="soft">The scholarships and aid opportunities that matter to the current GSU/healthcare path.</p></div>
+<div class="card full"><div class="toolbar"><input id="search" placeholder="Search opportunities…"><select id="bucketFilter"><option value="">All buckets</option><option value="gsu">🔒 GSU</option><option value="state">🏛️ State Aid</option><option value="other">🔥 Other / Active</option></select><select id="statusFilter"><option value="">All statuses</option></select></div><div id="activeList"></div></div>
 </section>
 
 <section id="add" class="page hidden">
-<div class="hero"><div class="label" id="formMode">Add opportunity</div><h1 id="formTitle">New scholarship.</h1><p class="soft">Add one the second we find it so nothing gets lost in a screenshot graveyard 😂.</p></div>
+<div class="hero"><div class="label" id="formMode">Add opportunity</div><h1 id="formTitle">New funding.</h1><p class="soft">Choose the bucket and Scholarship HQ will file it in the right place automatically.</p></div>
 <div class="card full">
-<input id="editId" type="hidden">
+<input id="editId" type="hidden"><input id="editSource" type="hidden">
 <div class="grid">
-<div class="card" style="box-shadow:none"><div class="label">Scholarship</div>
-<label><b>Scholarship Name</b><input id="fName" placeholder="Scholarship name"></label>
-<label><b>Organization</b><input id="fOrg" placeholder="Organization"></label>
-<label><b>Potential Award</b><input id="fAward" type="number" min="0" step="1" placeholder="Potential award"></label>
+<div class="card"><div class="label">Routing</div>
+<label><b>Funding Bucket</b><select id="fBucket"><option value="other">🔥 Other / Active</option><option value="gsu">🔒 GSU</option><option value="state">🏛️ State Aid</option><option value="pa">🩺 PA / Future Years</option><option value="fashion">👗 Fashion Vault</option></select></label>
+<label><b>Category</b><input id="fCategory" placeholder="Healthcare, STEM, Kinesiology, Local…"></label>
 </div>
-<div class="card" style="box-shadow:none"><div class="label">Tracking</div>
-<label><b>Priority</b><select id="fPriority"><option>High</option><option>Medium</option><option>Low</option></select></label>
-<label><b>Status</b><select id="fStatus"></select></label>
-<label><b>Application Deadline</b><input id="fDeadline" type="date"></label>
-<div class="tiny">Choose <b>Submitted</b> after you apply. Choose <b>Won</b> if you receive the scholarship.</div>
-<input id="fApplied" type="hidden" value="No">
+<div class="card"><div class="label">Scholarship / Aid</div><label><b>Name</b><input id="fName"></label><label><b>Organization</b><input id="fOrg"></label><label><b>Amount</b><input id="fAward" type="number" min="0"></label></div>
+<div class="card"><div class="label">Tracking</div><label><b>Status</b><select id="fStatus"></select></label><label><b>Deadline</b><input id="fDeadline" type="date"></label><label><b>Submitted Date</b><input id="fSubmitted" type="date"></label><label><b>Decision Date</b><input id="fDecisionDate" type="date"></label></div>
+<div class="card"><div class="label">Application pieces</div><label class="check"><input id="fEssay" type="checkbox"> Essay</label><label class="check"><input id="fRec" type="checkbox"> Recommendation</label><label class="check"><input id="fTranscript" type="checkbox"> Transcript</label><label class="check"><input id="fFafsa" type="checkbox"> FAFSA / Need-based</label></div>
+<div class="card wide"><div class="label">Where we stand</div><textarea id="fStand" placeholder="Current status / next move"></textarea><textarea id="fEligibility" placeholder="Eligibility / notes"></textarea></div>
+<div class="card"><div class="label">Outcome</div><label><b>Amount Won</b><input id="fWon" type="number" min="0"></label><label><b>Website</b><input id="fWebsite" placeholder="https://…"></label></div>
 </div>
-<div class="card" style="box-shadow:none"><div class="label">Money / follow-up</div>
-<label><b>Amount Won</b><input id="fWon" type="number" min="0" step="1" placeholder="Enter award amount"></label>
-<label><b>Next Action Date</b><input id="fNextDate" type="date"></label>
-<label><b>Next Action</b><input id="fNext" placeholder="Example: finish essay"></label>
-<label><b>Decision / Follow-Up</b><input id="fDecision" placeholder="Result, follow-up notes, etc."></label>
-</div>
-<div class="card wide" style="box-shadow:none"><div class="label">Application notes</div><textarea id="fEligibility" placeholder="Eligibility / fit"></textarea><textarea id="fNeeds" placeholder="What we need"></textarea></div>
-<div class="card" style="box-shadow:none"><div class="label">Links / contact</div>
-<label><b>Contact / Notes</b><input id="fContact" placeholder="Contact / notes"></label>
-<label><b>Website</b><input id="fWebsite" placeholder="Website URL"></label>
-</div>
-</div>
-<div class="row" style="margin-top:12px"><button class="btn" id="saveScholarship">Save scholarship</button><button class="btn alt hidden" id="cancelEdit">Cancel edit</button></div>
+<div class="row" style="margin-top:12px"><button class="btn" id="saveBtn">Save opportunity</button><button class="btn alt hidden" id="cancelBtn">Cancel edit</button></div>
 </div>
 </section>
 
-<section id="funding" class="page hidden">
-<div class="hero"><div class="label">GSU / State Aid Plan</div><h1>Fund the pivot.</h1><p class="soft">Keep the aid base and scholarship targets in one place.</p></div>
-<div class="grid">
-<div class="card wide">
-<div class="label">Current spring aid</div>
-<div class="grid" style="margin-top:8px">
-<div class="card" style="box-shadow:none"><label>Pell Grant<input id="pell" type="number"></label></div>
-<div class="card" style="box-shadow:none"><label>Subsidized Loan<input id="subsidized" type="number"></label></div>
-<div class="card" style="box-shadow:none"><label>Unsubsidized Loan<input id="unsubsidized" type="number"></label></div>
-<div class="card" style="box-shadow:none"><label>GSU / State Aid<input id="limGrant" type="number"></label></div>
-</div>
-<button class="btn" id="saveFunding">Save funding plan</button>
-</div>
-<div class="card"><div class="label">Current aid base</div><div class="kpi money" id="aidBase">$0</div></div>
-<div class="card"><div class="label">Scholarships won</div><div class="kpi money" id="fundingWon">$0</div></div>
-<div class="card"><div class="label">Total funding now</div><div class="kpi money" id="fundingTotal">$0</div></div>
-<div class="card full">
-<div class="goalrow"><div><div class="label">🎯 Spring 2027 Goal</div><input id="goal" type="number" min="0"></div><div><div class="label">Stretch goal</div><input id="stretch" type="number" min="0"></div></div>
-<div class="tiny">These update the dashboard progress automatically.</div>
-</div>
-</div>
+<section id="aid" class="page hidden">
+<div class="hero"><div class="label">Georgia + GSU</div><h1>Aid picture.</h1><p class="soft">Confirmed or estimated aid amounts live here separately from scholarship applications.</p></div>
+<div class="grid"><div class="card wide"><label>Pell Grant<input id="pell" type="number"></label><label>HOPE Scholarship<input id="hope" type="number"></label><label>Zell Miller<input id="zell" type="number"></label><label>Other GSU / State Aid<input id="otherAid" type="number"></label><label>Spring 2027 Scholarship Goal<input id="goal" type="number"></label><button class="btn" id="saveAid">Save aid plan</button></div><div class="card"><div class="label">Aid Total</div><div class="kpi" id="aidTotal">$0</div></div></div>
 </section>
 
-<section id="pavault" class="page hidden"><div class="hero"><div class="label">🩺 Future Red</div><h1>The PA Vault.</h1><p class="soft">Scholarships that require PA-school acceptance or enrollment live here so Future Red does not have to rediscover them.</p></div><div class="card full"><div class="scholarship"><h3>PA Foundation scholarships</h3><div class="meta">PA School · 🗃️ FUTURE RED · Not eligible yet</div><p>Save for the PA-school years; do not spend application energy here yet.</p></div><div class="scholarship"><h3>PA-school-specific scholarships</h3><div class="meta">Healthcare · 🩺 PA VAULT / Future Years</div><p>Add program-specific and professional-association awards here as they are discovered.</p></div></div></section>
-<section id="former" class="page hidden"><div class="hero"><div class="label">👗 Archive</div><h1>The Former Administration 😂</h1><p class="soft">Fashion Red’s checks are still welcome. Submitted applications cook; unfinished ones get reviewed before we spend more energy.</p></div><div class="card full"><div class="scholarship"><h3>PAVE × VMSD</h3><div class="meta">Existing application · 🍳 LET HER COOK</div></div><div class="scholarship"><h3>Edgy Prepster</h3><div class="meta">Existing application · 🍳 LET HER COOK</div></div><div class="scholarship"><h3>Licensing International</h3><div class="meta">Fashion/licensing · ⏸️ Reassess</div></div><div class="scholarship"><h3>BRAG</h3><div class="meta">Fashion/retail · ⏸️ Reassess</div></div></div></section>
-<section id="gameplan" class="page hidden">
-<div class="hero"><div class="label">Healthcare funding game plan</div><h1>Clock in. 🩺</h1><p class="soft">Reusable checklist for scholarship days.</p></div>
-<div class="card full" id="gamePlanList"></div>
-<div class="card full" style="margin-top:12px"><div class="label">Backup your tracker</div><p class="soft">Download a JSON backup before big edits or moving devices.</p><div class="row"><button class="btn alt" id="exportData">⬇️ Export backup</button><label class="btn alt" style="display:inline-flex;align-items:center">⬆️ Restore backup<input id="importData" type="file" accept=".json,application/json" style="display:none"></label><button class="btn danger" id="resetData">Reset app</button></div></div>
+<section id="pa" class="page hidden">
+<div class="hero"><div class="label">🩺 Future Red</div><h1>The PA Vault.</h1><p class="soft">Requires PA-school acceptance or enrollment? It gets saved here for Future Red instead of stealing today's time.</p></div>
+<div class="card full" id="paList"></div>
+</section>
+
+<section id="fashion" class="page hidden">
+<div class="hero"><div class="label">👗 Previous era</div><h1>The Fashion Vault 😂</h1><p class="soft">Pending checks are welcome. Unfinished applications get reassessed before they receive another ounce of energy.</p></div>
+<div class="card full" id="fashionList"></div>
+</section>
+
+<section id="backup" class="page hidden">
+<div class="hero"><div class="label">Data</div><h1>Backup HQ.</h1></div>
+<div class="card full"><div class="row"><button class="btn alt" id="exportBtn">⬇️ Export backup</button><label class="btn alt">⬆️ Restore backup<input id="importFile" type="file" accept=".json" style="display:none"></label><button class="btn danger" id="resetBtn">Reset app</button></div></div>
 </section>
 </div>
 
-<nav class="nav">
-<button data-page="dashboard" class="active">🏠 Dashboard</button>
-<button data-page="scholarships">🎓 Scholarships</button>
-<button data-page="add">➕ Add</button>
-<button data-page="funding">💵 Funding</button>
-<button data-page="pavault">🩺 PA Vault</button><button data-page="former">👗 Former Admin</button><button data-page="gameplan">✅ Game Plan</button>
-</nav>
+<nav class="nav"><button data-page="dashboard" class="active">🏠 Dashboard</button><button data-page="active">🔥 Active</button><button data-page="add">➕ Add</button><button data-page="aid">📚 Aid</button><button data-page="pa">🩺 PA Vault</button><button data-page="fashion">👗 Fashion</button><button data-page="backup">••• More</button></nav>
 
 <script>
-const KEY='ilyana-scholarship-hq-v1';
-const INITIAL={"scholarships":[{"id":"g1","name":"GSU General Scholarship Application","org":"Georgia State University","award":0,"priority":"High","status":"Research","deadline":"","eligibility":"Waiting for GSU scholarship access.","needs":"Complete immediately after access works","contact":"","website":"","applied":"No","decision":"\ud83d\udd12 GSU Admission Required","won":0,"nextActionDate":"","nextAction":"Get access and complete"},{"id":"g2","name":"Perimeter College Supplemental Scholarship Application","org":"GSU / Perimeter","award":0,"priority":"High","status":"Research","deadline":"2026-10-01","eligibility":"Waiting for GSU/Perimeter scholarship access.","needs":"Complete after access works","contact":"","website":"","applied":"No","decision":"\ud83d\udea8 TOP PRIORITY","won":0,"nextActionDate":"","nextAction":"Complete once access works"},{"id":"g3","name":"HOPE Scholarship eligibility","org":"Georgia State Aid","award":0,"priority":"High","status":"Research","deadline":"","eligibility":"Official transfer eligibility needs verification.","needs":"Get official transfer evaluation","contact":"","website":"","applied":"No","decision":"\ud83d\udd0e Need to verify","won":0,"nextActionDate":"","nextAction":"Verify HOPE eligibility"},{"id":"g4","name":"Zell Miller eligibility","org":"Georgia State Aid","award":0,"priority":"High","status":"Research","deadline":"","eligibility":"Official eligibility needs verification.","needs":"Verify eligibility","contact":"","website":"","applied":"No","decision":"\ud83d\udd0e Need to verify","won":0,"nextActionDate":"","nextAction":"Verify Zell Miller eligibility"},{"id":"g5","name":"GAfutures scholarship search / GSFAPP","org":"GAfutures","award":0,"priority":"High","status":"Eligible","deadline":"","eligibility":"Georgia scholarship and state-aid search/application hub.","needs":"Set up/check now","contact":"","website":"","applied":"No","decision":"\ud83d\udd25 Apply Now","won":0,"nextActionDate":"","nextAction":"Set up/check now"},{"id":"g6","name":"Dean Brook Kinesiology Scholarship","org":"GSU / Kinesiology","award":0,"priority":"High","status":"Research","deadline":"2026-10-15","eligibility":"Potential future/GSU match; verify current eligibility.","needs":"Watch eligibility","contact":"","website":"","applied":"No","decision":"\ud83d\udc40 Watch eligibility","won":0,"nextActionDate":"","nextAction":"Verify eligibility"},{"id":"g7","name":"HealthArc Scholarship","org":"HealthArc","award":3000,"priority":"High","status":"Research","deadline":"2026-10-01","eligibility":"Investigate current eligibility before applying.","needs":"Verify current requirements","contact":"","website":"","applied":"No","decision":"\ud83d\udd25 Investigate/apply now","won":0,"nextActionDate":"","nextAction":"Investigate current cycle"},{"id":"g8","name":"Community Foundation for Greater Atlanta","org":"Local","award":0,"priority":"High","status":"Research","deadline":"","eligibility":"Watch next cycle.","needs":"Monitor next cycle","contact":"","website":"","applied":"No","decision":"\ud83d\uddd3\ufe0f Watch list","won":0,"nextActionDate":"","nextAction":"Watch next cycle"},{"id":"g9","name":"Kinesiology / Exercise Science scholarships","org":"Major","award":0,"priority":"High","status":"Research","deadline":"","eligibility":"Major-specific outside scholarships.","needs":"Search","contact":"","website":"","applied":"No","decision":"\ud83d\udd0e Active hunting","won":0,"nextActionDate":"","nextAction":"Search current awards"},{"id":"g10","name":"Pre-health / STEM undergraduate scholarships","org":"Healthcare","award":0,"priority":"High","status":"Research","deadline":"","eligibility":"Undergraduate healthcare/STEM awards.","needs":"Search","contact":"","website":"","applied":"No","decision":"\ud83d\udd0e Active hunting","won":0,"nextActionDate":"","nextAction":"Search current awards"},{"id":"g11","name":"Women in STEM / healthcare scholarships","org":"Healthcare","award":0,"priority":"High","status":"Research","deadline":"","eligibility":"Women-focused STEM/healthcare awards.","needs":"Search","contact":"","website":"","applied":"No","decision":"\ud83d\udd0e Active hunting","won":0,"nextActionDate":"","nextAction":"Search current awards"},{"id":"g12","name":"Adult / nontraditional student scholarships","org":"General","award":0,"priority":"High","status":"Research","deadline":"","eligibility":"Adult/nontraditional student awards.","needs":"Search","contact":"","website":"","applied":"No","decision":"\ud83d\udd0e Active hunting","won":0,"nextActionDate":"","nextAction":"Search current awards"},{"id":"g13","name":"Transfer-student scholarships","org":"Transfer","award":0,"priority":"High","status":"Research","deadline":"","eligibility":"Transfer-focused awards.","needs":"Search","contact":"","website":"","applied":"No","decision":"\ud83d\udd0e Active hunting","won":0,"nextActionDate":"","nextAction":"Search current awards"},{"id":"g14","name":"Financial-need scholarships","org":"General","award":0,"priority":"High","status":"Research","deadline":"","eligibility":"Need-based outside awards.","needs":"Search","contact":"","website":"","applied":"No","decision":"\ud83d\udd0e Active hunting","won":0,"nextActionDate":"","nextAction":"Search current awards"}],"funding":{"pell":0,"subsidized":0,"unsubsidized":0,"limGrant":0,"goal":5000,"stretch":10000},"gameplan":[{"text":"Get GSU scholarship access and complete the General Scholarship Application.","done":false},{"text":"Complete the Perimeter supplemental application once access works.","done":false},{"text":"Get official HOPE / Zell Miller transfer eligibility evaluations.","done":false},{"text":"Set up or review GAfutures / GSFAPP.","done":false},{"text":"Search healthcare, STEM, transfer, adult-student, and financial-need awards.","done":false},{"text":"Leave submitted fashion applications alone unless follow-up is required.","done":false}]};
-const STATUSES=['Research','Eligible','Preparing','Submitted','Finalist','Won','Not Eligible'];
-let data=load();
-function load(){try{const x=JSON.parse(localStorage.getItem(KEY));return x&&x.scholarships?x:structuredClone(INITIAL)}catch(e){return structuredClone(INITIAL)}}
-function persist(){localStorage.setItem(KEY,JSON.stringify(data));saved.textContent='Saved ✓';renderAll()}
-function money(v){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(Number(v)||0)}
-function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function daysLeft(date){if(!date)return null;const a=new Date(date+'T12:00:00'),b=new Date();b.setHours(12,0,0,0);return Math.ceil((a-b)/86400000)}
-function statusClass(s){return 'status-'+String(s).replaceAll(' ','-')}
-function navTo(page){document.querySelectorAll('.page').forEach(p=>p.classList.add('hidden'));document.getElementById(page).classList.remove('hidden');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===page));window.scrollTo(0,0);renderAll()}
-document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>navTo(b.dataset.page));
-
-function renderDashboard(){
- const s=data.scholarships, won=s.reduce((a,x)=>a+(Number(x.won)||0),0);
- kpiTracked.textContent=s.length;
- kpiSubmitted.textContent=s.filter(x=>['Submitted','Finalist','Won'].includes(x.status)).length;
- kpiWon.textContent=s.filter(x=>x.status==='Won'||Number(x.won)>0).length;
- kpiMoney.textContent=money(won);
- kpiHigh.textContent=s.filter(x=>x.priority==='High'&&!['Won','Not Eligible'].includes(x.status)).length;
- const goal=Number(data.funding.goal)||0,pct=goal?Math.min(100,Math.round(won/goal*100)):0;
- goalText.textContent=`${money(won)} / ${money(goal)}`;goalPct.textContent=pct+'%';goalBar.style.width=pct+'%';stretchText.textContent=money(data.funding.stretch);
- const items=s.map(x=>({...x,dl:daysLeft(x.deadline)})).filter(x=>x.deadline||x.nextActionDate).sort((a,b)=>{
-   const ad=a.nextActionDate||a.deadline||'9999-12-31',bd=b.nextActionDate||b.deadline||'9999-12-31'; return ad.localeCompare(bd)
- }).slice(0,8);
- upcoming.innerHTML=items.length?items.map(x=>`<div class="scholarship"><div class="row"><b>${esc(x.name)}</b><span class="pill ${statusClass(x.status)}">${esc(x.status)}</span></div><div class="meta">${x.deadline?`Deadline: ${x.deadline}${x.dl!=null?` · ${x.dl<0?Math.abs(x.dl)+' days past':x.dl+' days left'}`:''}`:''}${x.nextActionDate?`<br>Next action: ${x.nextActionDate}${x.nextAction?' — '+esc(x.nextAction):''}`:''}</div></div>`).join(''):'<div class="empty">Add deadlines or next-action dates and they’ll show up here.</div>';
-}
-function renderScholarships(){
- const q=search.value.toLowerCase(),sf=statusFilter.value,pf=priorityFilter.value;
- const rows=data.scholarships.filter(x=>(!q||[x.name,x.org,x.eligibility,x.needs].join(' ').toLowerCase().includes(q))&&(!sf||x.status===sf)&&(!pf||x.priority===pf));
- scholarshipList.innerHTML=rows.length?rows.map(x=>{const dl=daysLeft(x.deadline), cls=dl!=null&&dl<0?'deadline-over':dl!=null&&dl<=14?'deadline-soon':'';return `<div class="scholarship ${cls}">
- <div class="row" style="justify-content:space-between"><div><h3>${esc(x.name)}</h3><div class="meta">${esc(x.org)}</div></div><div class="row"><span class="pill ${statusClass(x.status)}">${esc(x.status)}</span><span class="pill priority-${x.priority}">${esc(x.priority)}</span></div></div>
- <div class="meta" style="margin-top:8px"><b>Potential:</b> ${x.award?money(x.award):'TBD'}${x.deadline?` · <b>Deadline:</b> ${x.deadline} (${dl<0?Math.abs(dl)+' days past':dl+' days left'})`:''}${x.applied==='Yes'?' · ✅ Applied':''}${x.won?` · 🏆 Won ${money(x.won)}`:''}</div>
- ${x.nextAction?`<p><b>Next:</b> ${esc(x.nextAction)}${x.nextActionDate?' — '+x.nextActionDate:''}</p>`:''}
- <details><summary><b>Application details</b></summary><p><b>Eligibility / fit:</b> ${esc(x.eligibility||'—')}</p><p><b>What we need:</b> ${esc(x.needs||'—')}</p><p><b>Contact / notes:</b> ${esc(x.contact||'—')}</p>${x.decision?`<p><b>Decision / follow-up:</b> ${esc(x.decision)}</p>`:''}${x.website?`<p><a href="${esc(x.website)}" target="_blank" rel="noopener">Open scholarship website ↗</a></p>`:''}</details>
- <div class="actions"><button class="btn alt" onclick="editScholarship('${x.id}')">✏️ Edit</button><button class="btn danger" onclick="deleteScholarship('${x.id}')">🗑️ Delete</button></div>
- </div>`}).join(''):'<div class="empty">No scholarships match those filters.</div>';
-}
-function renderFunding(){
- pell.value=data.funding.pell;subsidized.value=data.funding.subsidized;unsubsidized.value=data.funding.unsubsidized;limGrant.value=data.funding.limGrant;goal.value=data.funding.goal;stretch.value=data.funding.stretch;
- const base=['pell','subsidized','unsubsidized','limGrant'].reduce((a,k)=>a+(Number(data.funding[k])||0),0),won=data.scholarships.reduce((a,x)=>a+(Number(x.won)||0),0);
- aidBase.textContent=money(base);fundingWon.textContent=money(won);fundingTotal.textContent=money(base+won);
-}
-function renderGamePlan(){gamePlanList.innerHTML=data.gameplan.map((x,i)=>`<label class="check"><input type="checkbox" data-gp="${i}" ${x.done?'checked':''}><span>${esc(x.text)}</span></label>`).join('');document.querySelectorAll('[data-gp]').forEach(c=>c.onchange=()=>{data.gameplan[Number(c.dataset.gp)].done=c.checked;persist()})}
-function renderAll(){renderDashboard();renderScholarships();renderFunding();renderGamePlan()}
-STATUSES.forEach(s=>{statusFilter.insertAdjacentHTML('beforeend',`<option>${s}</option>`);fStatus.insertAdjacentHTML('beforeend',`<option>${s}</option>`)});fStatus.value='Research';
-search.oninput=statusFilter.onchange=priorityFilter.onchange=renderScholarships;
-
-saveFunding.onclick=()=>{data.funding={pell:Number(pell.value)||0,subsidized:Number(subsidized.value)||0,unsubsidized:Number(unsubsidized.value)||0,limGrant:Number(limGrant.value)||0,goal:Number(goal.value)||0,stretch:Number(stretch.value)||0};persist();alert('Funding plan saved ✓')};
-
-saveScholarship.onclick=()=>{
- if(!fName.value.trim()){alert('Add the scholarship name first.');return}
- const id=editId.value||('s'+Date.now());
- const obj={id,name:fName.value.trim(),org:fOrg.value.trim(),award:Number(fAward.value)||0,priority:fPriority.value,status:fStatus.value,deadline:fDeadline.value,eligibility:fEligibility.value.trim(),needs:fNeeds.value.trim(),contact:fContact.value.trim(),website:fWebsite.value.trim(),applied:['Submitted','Finalist','Won'].includes(fStatus.value)?'Yes':'No',decision:fDecision.value.trim(),won:Number(fWon.value)||0,nextActionDate:fNextDate.value,nextAction:fNext.value.trim()};
- const ix=data.scholarships.findIndex(x=>x.id===id);if(ix>=0)data.scholarships[ix]=obj;else data.scholarships.push(obj);persist();clearForm();navTo('scholarships');
+const KEY='ilyana-scholarship-hq-v2';
+const STATUS=['🔥 Investigate / Apply Now','🚨 GSU Access Required','🔎 Verify','🔎 Active Hunting','👀 Watch Eligibility','🗓️ Watch List','Preparing','Submitted','⏳ Pending','Finalist','🏆 Won','Not Eligible','🩺 Future Red','🍳 Let Her Cook','⏸️ Reassess'];
+const START={
+active:[
+{id:'perimeter',bucket:'gsu',name:'GSU Perimeter Scholarships',org:'Georgia State University / Perimeter College',category:'GSU / Perimeter',award:0,status:'🚨 GSU Access Required',deadline:'2026-10-01',stand:'🚨 TOP PRIORITY once GSU access works',eligibility:'Varies by award.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:false,fafsa:false,won:0,website:''},
+{id:'general',bucket:'gsu',name:'GSU General Scholarship Application',org:'Georgia State University',category:'GSU',award:0,status:'🚨 GSU Access Required',deadline:'',stand:'🚨 Do immediately after access · October deadlines vary',eligibility:'Multiple awards through the GSU general scholarship application.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:false,fafsa:false,won:0,website:''},
+{id:'deanbrook',bucket:'gsu',name:'Dean Brook Kinesiology Scholarship',org:'Georgia State University',category:'Kinesiology / GSU',award:0,status:'👀 Watch Eligibility',deadline:'2026-10-15',stand:'👀 Potential future / GSU match',eligibility:'Eligibility still needs confirmation.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:false,fafsa:false,won:0,website:''},
+{id:'healtharc',bucket:'other',name:'HealthArc Scholarship',org:'HealthArc',category:'Healthcare',award:3000,status:'🔥 Investigate / Apply Now',deadline:'2026-10-01',stand:'🔥 Investigate / apply now',eligibility:'Current eligibility and requirements need verification.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:false,fafsa:false,won:0,website:''},
+{id:'hope',bucket:'state',name:'HOPE Scholarship',org:'Georgia Student Finance Commission',category:'State Aid',award:0,status:'🔎 Verify',deadline:'',stand:'🔎 Get official transfer evaluation',eligibility:'Tuition-based state aid; official transfer evaluation needed.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:true,fafsa:false,won:0,website:''},
+{id:'gafutures',bucket:'state',name:'GAfutures / GSFAPP',org:'GAfutures',category:'State Aid',award:0,status:'🔥 Investigate / Apply Now',deadline:'',stand:'🔥 Set up / check now · ongoing',eligibility:'Georgia state-aid account/application.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:false,fafsa:true,won:0,website:''},
+{id:'cfga',bucket:'other',name:'Community Foundation for Greater Atlanta',org:'Community Foundation for Greater Atlanta',category:'Local',award:0,status:'🗓️ Watch List',deadline:'',stand:'🗓️ Watch list · next cycle',eligibility:'Varied local awards.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:false,fafsa:false,won:0,website:''},
+{id:'healthstem',bucket:'other',name:'Outside health / STEM awards',org:'Various',category:'Healthcare / STEM',award:0,status:'🔎 Active Hunting',deadline:'',stand:'🔎 Active hunting · rolling',eligibility:'Outside healthcare and STEM scholarships.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:false,fafsa:false,won:0,website:''}
+],
+pa:[{id:'pafoundation',bucket:'pa',name:'PA Foundation scholarships',org:'PA Foundation',category:'PA School',award:0,status:'🩺 Future Red',deadline:'',stand:'Not eligible yet — revisit once accepted/enrolled in PA school.',eligibility:'PA-school-specific.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:false,fafsa:false,won:0,website:''}],
+fashion:[
+{id:'pave',bucket:'fashion',name:'PAVE × VMSD',org:'PAVE / VMSD',category:'Fashion / Retail',award:0,status:'🍳 Let Her Cook',deadline:'',stand:'Submitted — let her cook.',eligibility:'Existing application.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:false,fafsa:false,won:0,website:''},
+{id:'edgy',bucket:'fashion',name:'Edgy Prepster',org:'Edgy Prepster',category:'Fashion',award:0,status:'🍳 Let Her Cook',deadline:'',stand:'Submitted — let her cook.',eligibility:'Existing application.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:false,fafsa:false,won:0,website:''},
+{id:'licensing',bucket:'fashion',name:'Licensing International',org:'Licensing International',category:'Fashion / Licensing',award:10000,status:'⏸️ Reassess',deadline:'',stand:'Not finished — reassess.',eligibility:'Fashion-era opportunity.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:false,fafsa:false,won:0,website:''},
+{id:'brag',bucket:'fashion',name:'BRAG Scholarship',org:'Black Retail Action Group',category:'Fashion / Retail',award:0,status:'⏸️ Reassess',deadline:'',stand:'Not submitted — reassess.',eligibility:'Fashion-era opportunity.',submitted:'',decisionDate:'',essay:false,rec:false,transcript:false,fafsa:false,won:0,website:''}
+],
+aid:{pell:0,hope:0,zell:0,otherAid:0,goal:5000}
 };
-function clearForm(){editId.value='';fName.value=fOrg.value=fAward.value=fDeadline.value=fWon.value=fNextDate.value=fNext.value=fDecision.value=fEligibility.value=fNeeds.value=fContact.value=fWebsite.value='';fPriority.value='High';fStatus.value='Research';fApplied.value='No';formMode.textContent='Add opportunity';formTitle.textContent='New scholarship.';saveScholarship.textContent='Save scholarship';cancelEdit.classList.add('hidden')}
-window.editScholarship=id=>{const x=data.scholarships.find(x=>x.id===id);if(!x)return;editId.value=x.id;fName.value=x.name;fOrg.value=x.org;fAward.value=x.award||'';fPriority.value=x.priority;fStatus.value=x.status;fDeadline.value=x.deadline||'';fApplied.value=x.applied||'No';fWon.value=x.won||'';fNextDate.value=x.nextActionDate||'';fNext.value=x.nextAction||'';fDecision.value=x.decision||'';fEligibility.value=x.eligibility||'';fNeeds.value=x.needs||'';fContact.value=x.contact||'';fWebsite.value=x.website||'';formMode.textContent='Editing opportunity';formTitle.textContent=x.name;saveScholarship.textContent='Update scholarship';cancelEdit.classList.remove('hidden');navTo('add')};
-window.deleteScholarship=id=>{const x=data.scholarships.find(x=>x.id===id);if(!x||!confirm(`Delete "${x.name}"?`))return;data.scholarships=data.scholarships.filter(x=>x.id!==id);persist()};
-cancelEdit.onclick=()=>{clearForm();navTo('scholarships')};
+const clone=x=>JSON.parse(JSON.stringify(x));
+let data=(()=>{try{const x=JSON.parse(localStorage.getItem(KEY));return x&&x.active?x:clone(START)}catch(e){return clone(START)}})();
+const $=id=>document.getElementById(id), money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(Number(n)||0);
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+function save(){localStorage.setItem(KEY,JSON.stringify(data));$('saved').textContent='Saved ✓';render()}
+function nav(p){document.querySelectorAll('.page').forEach(x=>x.classList.add('hidden'));$(p).classList.remove('hidden');document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.page===p));scrollTo(0,0);render()}
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>nav(b.dataset.page));
+STATUS.forEach(s=>{$('fStatus').add(new Option(s,s));$('statusFilter').add(new Option(s,s))});
 
-exportData.onclick=()=>{const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='scholarship-hq-backup.json';a.click();URL.revokeObjectURL(a.href)};
-importData.onchange=e=>{const file=e.target.files[0];if(!file)return;const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!x.scholarships)throw new Error();data=x;persist();alert('Backup restored ✓')}catch(err){alert('That backup file could not be read.')}};r.readAsText(file)};
-resetData.onclick=()=>{if(confirm('Reset Scholarship HQ back to the original tracker? This will erase app changes on this device.')){data=structuredClone(INITIAL);persist();clearForm()}};
-renderAll();
+function all(){return [...data.active,...data.pa,...data.fashion]}
+function isApplied(x){return !!x.submitted||['Submitted','⏳ Pending','Finalist','🏆 Won','🍳 Let Her Cook'].includes(x.status)}
+function card(x,source){
+return `<div class="scholarship"><div class="row" style="justify-content:space-between"><div><h3>${esc(x.name)}</h3><div class="meta">${esc(x.org)} · ${esc(x.category||'')}</div></div><div class="row"><span class="pill">${esc(x.status)}</span><span class="pill">${x.bucket==='gsu'?'🔒 GSU':x.bucket==='state'?'🏛️ State':x.bucket==='pa'?'🩺 PA':x.bucket==='fashion'?'👗 Fashion':'🔥 Other'}</span></div></div><div class="meta" style="margin-top:8px"><b>Amount:</b> ${x.award?money(x.award):'Varies / State Aid'}${x.deadline?` · <b>Deadline:</b> ${x.deadline}`:''}</div><p><b>Where we stand:</b> ${esc(x.stand||'—')}</p><details><summary><b>Application details</b></summary><p><b>Eligibility:</b> ${esc(x.eligibility||'—')}</p><p><b>Pieces:</b> ${[x.essay?'Essay':'',x.rec?'Recommendation':'',x.transcript?'Transcript':'',x.fafsa?'FAFSA/Need':''].filter(Boolean).join(' · ')||'None marked yet'}</p>${x.submitted?`<p><b>Submitted:</b> ${x.submitted}</p>`:''}${x.decisionDate?`<p><b>Decision date:</b> ${x.decisionDate}</p>`:''}${x.website?`<p><a href="${esc(x.website)}" target="_blank" rel="noopener">Open website ↗</a></p>`:''}</details><div class="actions"><button class="btn alt" onclick="editItem('${x.id}','${source}')">✏️ Edit</button><button class="btn danger" onclick="deleteItem('${x.id}','${source}')">🗑️ Delete</button></div></div>`}
+function render(){
+const A=all(),ap=A.filter(isApplied).reduce((n,x)=>n+(Number(x.award)||0),0),pending=A.filter(x=>isApplied(x)&&x.status!=='🏆 Won').reduce((n,x)=>n+(Number(x.award)||0),0),won=A.reduce((n,x)=>n+(Number(x.won)||0),0),aid=Object.entries(data.aid).filter(([k])=>k!=='goal').reduce((n,[,v])=>n+(Number(v)||0),0);
+$('appliedMoney').textContent=money(ap);$('pendingMoney').textContent=money(pending);$('wonMoney').textContent=money(won);$('goalMoney').textContent=money(data.aid.goal);$('aidMoney').textContent=money(aid);$('activeCount').textContent=data.active.length;
+$('priorityBoard').innerHTML=data.active.map(x=>`<div class="scholarship"><b>${esc(x.name)}</b><div class="meta">${x.deadline?'Deadline '+x.deadline+' · ':''}${esc(x.stand)}</div></div>`).join('');
+const q=$('search').value.toLowerCase(),bf=$('bucketFilter').value,sf=$('statusFilter').value,rows=data.active.filter(x=>(!q||[x.name,x.org,x.category,x.stand].join(' ').toLowerCase().includes(q))&&(!bf||x.bucket===bf)&&(!sf||x.status===sf));
+$('activeList').innerHTML=rows.length?rows.map(x=>card(x,'active')).join(''):'<div class="empty">No matches.</div>';
+$('paList').innerHTML=data.pa.length?data.pa.map(x=>card(x,'pa')).join(''):'<div class="empty">PA Vault is empty.</div>';
+$('fashionList').innerHTML=data.fashion.length?data.fashion.map(x=>card(x,'fashion')).join(''):'<div class="empty">Fashion Vault is empty.</div>';
+['pell','hope','zell','otherAid','goal'].forEach(k=>$(k).value=data.aid[k]||0);$('aidTotal').textContent=money(aid);
+}
+$('search').oninput=$('bucketFilter').onchange=$('statusFilter').onchange=render;
+function clearForm(){['editId','editSource','fName','fOrg','fCategory','fAward','fDeadline','fSubmitted','fDecisionDate','fStand','fEligibility','fWon','fWebsite'].forEach(i=>$(i).value='');['fEssay','fRec','fTranscript','fFafsa'].forEach(i=>$(i).checked=false);$('fBucket').value='other';$('fStatus').value=STATUS[0];$('formMode').textContent='Add opportunity';$('formTitle').textContent='New funding.';$('saveBtn').textContent='Save opportunity';$('cancelBtn').classList.add('hidden')}
+function getArray(source){return source==='pa'?data.pa:source==='fashion'?data.fashion:data.active}
+window.editItem=(id,source)=>{const x=getArray(source).find(v=>v.id===id);if(!x)return;$('editId').value=id;$('editSource').value=source;$('fBucket').value=x.bucket;$('fName').value=x.name;$('fOrg').value=x.org;$('fCategory').value=x.category||'';$('fAward').value=x.award||'';$('fStatus').value=x.status;$('fDeadline').value=x.deadline||'';$('fSubmitted').value=x.submitted||'';$('fDecisionDate').value=x.decisionDate||'';$('fEssay').checked=!!x.essay;$('fRec').checked=!!x.rec;$('fTranscript').checked=!!x.transcript;$('fFafsa').checked=!!x.fafsa;$('fStand').value=x.stand||'';$('fEligibility').value=x.eligibility||'';$('fWon').value=x.won||'';$('fWebsite').value=x.website||'';$('formMode').textContent='Editing opportunity';$('formTitle').textContent=x.name;$('saveBtn').textContent='Update opportunity';$('cancelBtn').classList.remove('hidden');nav('add')};
+window.deleteItem=(id,source)=>{const arr=getArray(source),x=arr.find(v=>v.id===id);if(!x||!confirm(`Delete "${x.name}"?`))return;if(source==='pa')data.pa=data.pa.filter(v=>v.id!==id);else if(source==='fashion')data.fashion=data.fashion.filter(v=>v.id!==id);else data.active=data.active.filter(v=>v.id!==id);save()};
+$('saveBtn').onclick=()=>{if(!$('fName').value.trim())return alert('Add a name first.');const id=$('editId').value||'s'+Date.now(),oldSource=$('editSource').value; if(oldSource==='pa')data.pa=data.pa.filter(x=>x.id!==id);else if(oldSource==='fashion')data.fashion=data.fashion.filter(x=>x.id!==id);else data.active=data.active.filter(x=>x.id!==id);const x={id,bucket:$('fBucket').value,name:$('fName').value.trim(),org:$('fOrg').value.trim(),category:$('fCategory').value.trim(),award:Number($('fAward').value)||0,status:$('fStatus').value,deadline:$('fDeadline').value,submitted:$('fSubmitted').value,decisionDate:$('fDecisionDate').value,essay:$('fEssay').checked,rec:$('fRec').checked,transcript:$('fTranscript').checked,fafsa:$('fFafsa').checked,stand:$('fStand').value.trim(),eligibility:$('fEligibility').value.trim(),won:Number($('fWon').value)||0,website:$('fWebsite').value.trim()};if(x.bucket==='pa')data.pa.push(x);else if(x.bucket==='fashion')data.fashion.push(x);else data.active.push(x);save();clearForm();nav(x.bucket==='pa'?'pa':x.bucket==='fashion'?'fashion':'active')};
+$('cancelBtn').onclick=()=>{clearForm();nav('active')};
+$('saveAid').onclick=()=>{['pell','hope','zell','otherAid','goal'].forEach(k=>data.aid[k]=Number($(k).value)||0);save();alert('Aid plan saved ✓')};
+$('exportBtn').onclick=()=>{const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='scholarship-hq-backup.json';a.click();URL.revokeObjectURL(a.href)};
+$('importFile').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!x.active||!x.pa||!x.fashion)throw 0;data=x;save();alert('Backup restored ✓')}catch(e){alert('Could not read that backup.')}};r.readAsText(f)};
+$('resetBtn').onclick=()=>{if(confirm('Reset Scholarship HQ?')){data=clone(START);save();clearForm()}};
+clearForm();render();
 </script>
-</body>
-</html>
+</body></html>
